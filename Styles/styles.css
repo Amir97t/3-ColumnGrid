@@ -1,0 +1,130 @@
+:root {
+  --color-primary: hsl(31, 77%, 52%);
+  --color-secondary: hsl(184, 100%, 22%);
+  --color-tertairy: hsl(179, 100%, 13%);
+}
+
+body,
+.btn {
+  font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+/* Cards */
+.card {
+  border-radius: 7px;
+  height: 20rem;
+  margin: 0 auto;
+  width: 16rem;
+}
+
+.card__header {
+  font-family: "Big Shoulders Display";
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0 3rem;
+}
+
+.card__body {
+  font-size: 13px;
+  font-weight: 300;
+  margin: 1rem 3rem;
+  opacity: 90%;
+}
+
+.card--primary {
+  background-color: var(--color-primary);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.card--secondary {
+  background-color: var(--color-secondary);
+  border-radius: 0;
+}
+
+.card--tertairy {
+  background-color: var(--color-tertairy);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* icons */
+.icon {
+  margin: 2rem 3rem;
+  width: 30x;
+  height: 30px;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 20px;
+  border: 2px solid hsl(0, 0%, 95%);
+  cursor: pointer;
+  font-weight: 300;
+  margin-left: 3rem;
+  padding: 0.7rem 1.8rem;
+}
+
+.btn--primary {
+  color: var(--color-primary);
+}
+
+.btn--primary:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: var(--color-primary);
+}
+
+.btn--secondary {
+  color: var(--color-secondary);
+}
+
+.btn--secondary:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: var(--color-secondary);
+}
+
+.btn--tertairy {
+  color: var(--color-tertairy);
+}
+
+.btn--tertairy:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: var(--color-tertairy);
+}
+
+@media screen and (min-width: 1024px) {
+  .grid {
+    display: grid;
+    justify-content: center;
+    margin: 16rem 0;
+    grid-template-columns: repeat(3, 15.4%);
+  }
+
+  .card {
+    height: 25rem;
+    border-radius: 7px;
+  }
+
+  .card__body {
+    line-height: 1.5;
+  }
+
+  .card--primary {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .card--secondary {
+    border-radius: 0;
+  }
+
+  .card--tertairy {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .btn {
+    margin-top: 3rem;
+  }
+}
